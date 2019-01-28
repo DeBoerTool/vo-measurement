@@ -1,0 +1,24 @@
+{
+  "name": "@deboertool/vo-measurement",
+  "version": "0.0.1",
+  "description": "A value object for a measurement",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeBoerTool/vo-measurement.git"
+  },
+  "author": "Daniel S. Deboer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeBoerTool/vo-measurement/issues"
+  },
+  "homepage": "https://github.com/DeBoerTool/vo-measurement#readme",
+  "dependencies": {
+    "@deboertool/value-object-interface": "0.0.2",
+    "@deboertool/vo-precision": "0.0.1",
+    "@deboertool/vo-unit": "0.0.3"
+  }
+}

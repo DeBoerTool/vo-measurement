@@ -1,0 +1,1 @@
+A value object for a measurement with precision and units.
