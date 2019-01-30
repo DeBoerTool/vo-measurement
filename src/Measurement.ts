@@ -4,9 +4,9 @@ import IMeasurement from './Interfaces/Measurement'
 
 export default class Measurement implements IMeasurement  {
   constructor (
-    private _value: number, 
-    private _precision: PrecisionInterface,
-    private _units: UnitInterface
+    protected _value: number, 
+    protected _precision: PrecisionInterface,
+    protected _units: UnitInterface
   ) {}
 
   value (): number {
