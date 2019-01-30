@@ -9,7 +9,24 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: ['babel-loader', 'ts-loader'],
+        use: [
+          { loader: 'babel-loader' },
+          { 
+            loader: 'ts-loader', 
+            options: {
+              allowTsInNodeModules: true
+            } 
+          },
+        ],
+        // loader: [
+        //   'babel-loader', 
+        //   [
+        //     'ts-loader',
+        //     {
+        //       allowTsInNodeModules: true,
+        //     },
+        //   ],
+        // ],
       },
       {
         test: /\.js$/,

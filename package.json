@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/DeBoerTool/vo-measurement#readme",
   "dependencies": {
-    "@deboertool/value-object-interface": "0.0.2",
+    "@deboertool/value-object-interface": "^0.3.2",
     "@deboertool/vo-precision": "0.0.1",
     "@deboertool/vo-unit": "0.0.3"
   },
