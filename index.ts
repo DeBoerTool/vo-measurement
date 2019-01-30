@@ -1,5 +1,5 @@
 import Measurement from './src/Measurement'
-import MeasurementInterface from './src/Interfaces/Measurement'
+import IMeasurement from './src/Interfaces/Measurement'
 
-export { Measurement, MeasurementInterface }
-export default MeasurementInterface 
+export { Measurement, IMeasurement }
+export default Measurement
