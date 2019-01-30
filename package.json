@@ -4,6 +4,8 @@
   "description": "A value object for a measurement",
   "main": "index.ts",
   "scripts": {
+    "postversion": "git push && git push --tags",
+    "build": "tsc",
     "test": "mocha-webpack --webpack-config webpack.config.js ./test/*.spec.ts"
   },
   "repository": {
@@ -17,7 +19,7 @@
   },
   "homepage": "https://github.com/DeBoerTool/vo-measurement#readme",
   "dependencies": {
-    "@deboertool/value-object-interface": "^0.3.2",
+    "@deboertool/value-object-interface": "^0.3.4",
     "@deboertool/vo-precision": "0.0.1",
     "@deboertool/vo-unit": "0.0.3"
   },

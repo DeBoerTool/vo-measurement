@@ -7,10 +7,10 @@ const value = 12.193
 const newValue = 9999
 
 const multiplier = 7
-const multValue = value * multiplier
+const multipliedValue = value * multiplier
 
 const subtrahend = 12
-const subValue = value - subtrahend
+const subtractedValue = value - subtrahend
 
 const vo = new Measurement(
   value, 
@@ -31,12 +31,12 @@ describe('Measurement', () => {
 
   it(
     'can be multiplied',
-    () => expect(vo.times(multiplier).value()).to.equal(multValue)
+    () => expect(vo.times(multiplier).value()).to.equal(multipliedValue)
   )
 
   it(
     'can be subtracted from',
-    () => expect(vo.minus(subtrahend).value()).to.equal(subValue)
+    () => expect(vo.minus(subtrahend).value()).to.equal(subtractedValue)
   )
 
   it(
@@ -45,7 +45,7 @@ describe('Measurement', () => {
       const subtracted = vo.minus(subtrahend)
 
       expect(vo.value()).to.equal(value)
-      expect(subtracted.value()).to.equal(subValue)
+      expect(subtracted.value()).to.equal(subtractedValue)
     }
   )
 })

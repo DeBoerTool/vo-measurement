@@ -1,9 +1,9 @@
 import ValueObject from '@deboertool/value-object-interface'
 
-interface Measurement extends ValueObject<number> {
-  clone (value: number): Measurement
-  times (value: number): Measurement
-  minus (value: number): Measurement
+interface IMeasurement extends ValueObject<number> {
+  clone (value: number): IMeasurement
+  times (value: number): IMeasurement
+  minus (value: number): IMeasurement
 }
 
-export default Measurement
+export default IMeasurement

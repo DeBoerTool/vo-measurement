@@ -1,5 +1,3 @@
-
-
 module.exports = {
   entry: './index.ts',
   
@@ -10,23 +8,16 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: [
-          { loader: 'babel-loader' },
           { 
-            loader: 'ts-loader', 
+            loader: 'babel-loader' 
+          }, 
+          { 
+            loader: 'ts-loader',
             options: {
               allowTsInNodeModules: true
-            } 
-          },
+            }
+          }
         ],
-        // loader: [
-        //   'babel-loader', 
-        //   [
-        //     'ts-loader',
-        //     {
-        //       allowTsInNodeModules: true,
-        //     },
-        //   ],
-        // ],
       },
       {
         test: /\.js$/,
