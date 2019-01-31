@@ -43,4 +43,29 @@ export default class Measurement implements IMeasurement
       this.value() - minuend
     )
   }
+
+  isGreaterThan (comparison: number): boolean
+  {
+    return this.value() > comparison
+  }
+
+  isGreaterThanOrEqualTo (comparison: number): boolean
+  {
+    return this.isGreaterThan(comparison) || this.isEqualTo(comparison)
+  }
+
+  isEqualTo (comparison: number): boolean
+  {
+    return this.value() === comparison
+  }
+
+  isLessThan (comparison: number): boolean
+  {
+    return this.value() < comparison
+  }
+
+  isLessThanOrEqualTo (comparison: number): boolean
+  {
+    return this.isLessThan(comparison) || this.isEqualTo(comparison)
+  }
 }
