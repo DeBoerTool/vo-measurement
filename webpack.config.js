@@ -5,15 +5,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [
-          { 
-            loader: 'ts-loader',
-            options: {
-              allowTsInNodeModules: true,
-              configFile: 'tsconfig-test.json'
-            }
-          }
-        ],
+        use: [{ loader: 'ts-loader' }]
       },
     ],
   },
