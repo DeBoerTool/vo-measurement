@@ -1,6 +1,4 @@
 module.exports = {
-  entry: './index.ts',
-  
   mode: 'development',
   
   module: {
@@ -9,25 +7,18 @@ module.exports = {
         test: /\.tsx?$/,
         use: [
           { 
-            loader: 'babel-loader' 
-          }, 
-          { 
             loader: 'ts-loader',
             options: {
-              allowTsInNodeModules: true
+              allowTsInNodeModules: true,
+              configFile: 'tsconfig-test.json'
             }
           }
         ],
-      },
-      {
-        test: /\.js$/,
-        use: ["source-map-loader"],
-        enforce: "pre"
       },
     ],
   },
 
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.ts', '.js'],
   },
 }
