@@ -1,7 +1,7 @@
 import Precision from '@deboertool/vo-precision'
 import { Factory } from '@deboertool/vo-unit'
 import { expect } from 'chai'
-import Measurement from '../src/Measurement'
+import { Measurement } from '../'
 
 const value = 12.193
 const newValue = 9999
