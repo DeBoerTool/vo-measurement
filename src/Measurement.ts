@@ -1,6 +1,6 @@
 import { PrecisionInterface as IPrecision } from '@deboertool/vo-precision'
 import { IUnit } from '@deboertool/vo-unit'
-import IMeasurement from './Interfaces/IMeasurement'
+import IMeasurement from './IMeasurement'
 
 export default class Measurement implements IMeasurement  
 {
