@@ -2,6 +2,8 @@ import ValueObject from '@deboertool/value-object-interface'
 import { IPrecision } from '@deboertool/vo-precision'
 import { IUnit } from '@deboertool/vo-unit'
 
+export type ValueRange = [number, number]
+
 interface IMeasurement extends ValueObject<number> {
   precision (): IPrecision
   unit (): IUnit
@@ -13,6 +15,7 @@ interface IMeasurement extends ValueObject<number> {
   isEqualTo (comparison: IMeasurement | number): boolean
   isLessThan (comparison: IMeasurement | number): boolean
   isLessThanOrEqualTo (comparison: number): boolean
+  isInRange (range: ValueRange): boolean
 }
 
 export default IMeasurement

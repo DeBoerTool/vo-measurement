@@ -1,6 +1,6 @@
 import { IPrecision } from '@deboertool/vo-precision'
 import { IUnit } from '@deboertool/vo-unit'
-import IMeasurement from './IMeasurement'
+import IMeasurement, { ValueRange } from './IMeasurement'
 
 export default class Measurement implements IMeasurement  
 {
@@ -67,5 +67,10 @@ export default class Measurement implements IMeasurement
   isLessThanOrEqualTo (comparison: number): boolean
   {
     return this.isLessThan(comparison) || this.isEqualTo(comparison)
+  }
+
+  isInRange (range: ValueRange): boolean
+  {
+    return this.isLessThan(range[1]) && this.isGreaterThanOrEqualTo(range[0])
   }
 }
