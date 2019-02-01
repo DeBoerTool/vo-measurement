@@ -1,6 +1,6 @@
 {
   "name": "@deboertool/vo-measurement",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A value object for a measurement",
   "main": "index.ts",
   "scripts": {
