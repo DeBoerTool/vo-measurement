@@ -20,7 +20,7 @@
   "homepage": "https://github.com/DeBoerTool/vo-measurement#readme",
   "dependencies": {
     "@deboertool/value-object-interface": "^0.3.4",
-    "@deboertool/vo-precision": "0.0.1",
+    "@deboertool/vo-precision": "^0.1.0",
     "@deboertool/vo-unit": "^0.1.2"
   },
   "devDependencies": {
