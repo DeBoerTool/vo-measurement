@@ -10,6 +10,7 @@ interface IMeasurement extends ValueObject<number> {
   clone (value: number): IMeasurement
   times (value: number): IMeasurement
   minus (value: number): IMeasurement
+  plus (value: number): IMeasurement
   isGreaterThan (comparison: IMeasurement | number): boolean
   isGreaterThanOrEqualTo (comparison: IMeasurement | number): boolean
   isEqualTo (comparison: IMeasurement | number): boolean

@@ -43,7 +43,14 @@ export default class Measurement implements IMeasurement
       this.value() - minuend
     )
   }
-
+    
+  plus (addend: number): IMeasurement 
+  {
+    return this.clone(
+      this.value() + addend
+    )
+  }
+    
   isGreaterThan (comparison: number): boolean
   {
     return this.value() > comparison
